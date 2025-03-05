@@ -1,0 +1,312 @@
+/* style.css */
+
+/* -------------------------------------------------- Phone --------------------------------------------------*/
+.header-content {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Distribute space, pushing contact info to right */
+}
+
+
+
+/* -------------------------------------------------- General Styles--------------------------------------------------*/
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0; /* REMOVE padding-left from body */
+    box-sizing: border-box;
+}
+
+main {
+    padding: 20px; /* No margin-left needed */
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3em;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #555;
+    margin-top: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Header Styles */
+header {
+    background-image: url("your-header-image.jpg"); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* -------------------------------------------------- Description Section -------------------------------------------------- */
+#description {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #f8f8f8;
+}
+
+.description-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.description-image {
+    flex: 1;
+}
+
+.description-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+
+
+/* -------------------------------------------------- Menu Box -------------------------------------------------- */
+
+/* Top Navigation */
+.top-nav {
+    background-color: #23395d;
+    padding: 5px;
+    text-align: center; /* Center the menu items */
+    width: 100%;
+}
+
+.top-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Make the list horizontal */
+}
+
+.top-nav li {
+    display: inline; /* Make list items horizontal */
+    margin: 0 15px; /* Spacing between items */
+}
+
+.top-nav a { /* Combined styles for all links */
+    display: inline-block; /* Or block if you want vertical menu */
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.top-nav a:hover {
+    color: #96d8c2;
+}
+
+
+/* -------------------------------------------------- Main Content Area -------------------------------------------------- */
+/* call button */
+.call-to-action {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Add gap between the buttons */
+}
+
+.phone-numbers {
+    display: flex; /* Use flexbox for side-by-side */
+    gap: 20px; /* Adjust spacing between buttons */
+}
+
+.call-to-action button {
+    background-color: #96d8c2;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.call-to-action button:hover {
+    background-color: #66D3A9;
+}
+
+.call-to-action a {
+    text-decoration: none;
+}
+
+/* end of call button */
+
+/*description section */
+#description {
+    padding: 50px; /* Adjust as needed */
+    background-color: #f8f8f8; /* Or any color you like */
+    text-align: center; /* Center the content */
+}
+
+.description-content {
+    max-width: 800px; /* Limit width for readability */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+#description h2 {
+    font-size: 2em; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+#description p {
+    font-size: 1.2em; /* Adjust as needed */
+    line-height: 1.6; /* Improve readability */
+}
+
+/*end of description section */
+
+/* ------------ Image Carousel -----------*/
+#image-carousel {
+    overflow: hidden; /* Hide overflowing images */
+    width: 100%; /* Make carousel full width */
+    position: relative; /* For absolute positioning of slides */
+}
+
+.carousel-container {
+    display: flex; /* Arrange images horizontally */
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.carousel-slide {
+    min-width: 75%; /* Make each slide full width */
+}
+
+.carousel-slide img {
+    width: 75%; /* Make images fill their slides */
+    height: auto;
+    display: block; /* Remove extra space below images */
+}
+
+/* ------------ Service Page Image Carousel (Kitchen) -----------*/
+#image-carousel-2 {
+    overflow: hidden; /* Hide overflowing images */
+    width: 65%; /* Make carousel full width */
+    position: relative; /* For absolute positioning of slides */
+}
+
+.carousel-container-2 {
+    display: flex; /* Arrange images horizontally */
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.carousel-slide-2 {
+    min-width: 100%; /* Make each slide full width */
+}
+
+.carousel-slide-2 img {
+    width: 65%; /* Make images fill their slides */
+    height: auto;
+    display: block; /* Remove extra space below images */
+}
+
+/* ------------ Service Page Image Carousel (Bathroom) -----------*/
+#image-carousel-bathroom {
+    overflow: hidden;
+    width: 65%;
+    position: relative;
+}
+
+.carousel-container-bathroom {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide-bathroom {
+    min-width: 100%;
+}
+
+.carousel-slide-bathroom img {
+    width: 65%;
+    height: auto;
+    display: block;
+}
+
+/* Featured Section */
+
+#featured-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 50px;
+    background-color: #f8f8f8;
+}
+
+.featured-box {
+    border: 1px solid #ddd;
+    padding: 30px;
+    text-align: center;
+    background-color: #23395d; /* Dark blue background */
+    color: #fff; /* White text */
+}
+
+.featured-box h3 {
+    margin-bottom: 10px;
+    color: #fff; /* White heading text */
+}
+
+.featured-box a { /* If you have links in the boxes */
+    color: #96d8c2; /* Teal link color (or any color you prefer) */
+}
+
+
+/* Footer */
+
+
+/* Social Media Styles */
+.social-media {
+    display: flex;
+    justify-content: center; /* Center the icons horizontally */
+    gap: 20px; /* Adjust spacing between icons */
+    margin-top: 20px; /* Add some space above the icons in the footer */
+}
+
+.social-media a {
+    display: block; /* Make the links block elements for better clickability */
+}
+
+.social-media img {
+    width: 30px; /* Adjust icon size as needed */
+    height: auto;
+}
+
+/* Social Media Styles in Header (example) */
+.social-media-header {
+    display: flex;
+    gap: 10px; /* Adjust spacing between icons */
+}
+
+.social-media-header a {
+    display: block; /* Make the links block elements for better clickability */
+}
+
+.social-media-header img {
+    width: 20px; /* Adjust icon size as needed */
+    height: auto;
+}
+
