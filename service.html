@@ -11,98 +11,171 @@
         <h1>Nice Home Renovation Inc.</h1>
         <nav class="top-nav">
             <ul>
-                <li><a href="index">Home</a></li>
-                <li><a href="about">About Us</a></li>
-                <li><a href="service">Services</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <div id="image-popup" class="popup">
+            <span class="close-popup">&times;</span>
+            <img src="" alt="Popup Image" class="popup-image">
+        </div>
 
-
-        <section id="services">
-            <h2>Our Services</h2>
-
-            <div class="service-item">
-                <h3>Kitchen Remodeling</h3>
-                <p>Transform your kitchen into the heart of your home with our custom remodeling services.</p>
-                <section id="image-carousel-2">
-                    <div class="carousel-container-2">
-                        <div class="carousel-slide-2">
-                            <img src="Photos/Kitchen/IMG_3606.jpg" alt="Image 1">
-                        </div>
-                        <div class="carousel-slide-2">
-                            <img src="Photos/Kitchen/IMG_4599.jpg" alt="Image 2">
-                        </div>
-                        <div class="carousel-slide-2">
-                            <img src="Photos/Kitchen/IMG_2942.jpg" alt="Image 3">
-                        </div>
+        <section id="kitchen-services" class="service-section">
+            <div class="service-content">
+                <h2>Kitchen Remodeling</h2>
+                <p class="service-description">
+                    We specialize in transforming kitchens into beautiful, functional spaces tailored to your style and needs. Whether you're looking for modern upgrades, custom cabinetry, or a complete renovation, we bring your vision to life with expert craftsmanship and attention to detail.
+                </p>
+        
+                <div class="image-grid">
+                    <div class="grid-item">
+                        <img src="Photos/Kitchen/IMG_2942.jpg" alt="Kitchen 1" data-image="Photos/Kitchen/IMG_2942.jpg">
                     </div>
-                </div>
-                <p><strong>Process:</strong> Consultation, design, demolition, installation, finishing.</p>
-                <p><strong>Benefits:</strong> Increased home value, improved functionality, modern aesthetics.</p>
+                    <div class="grid-item">
+                        <img src="Photos/Kitchen/IMG_3606.jpg" alt="Kitchen 2" data-image="Photos/Kitchen/IMG_3606.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Photos/Kitchen/IMG_4599.jpg" alt="Kitchen 3" data-image="Photos/Kitchen/IMG_4599.jpg">
+                    </div>
             </div>
-
-            <div class="service-item">
-                <h3>Bathroom Renovation</h3>
-                <p>Create the bathroom of your dreams with our comprehensive renovation solutions. From elegant 
-                    fixtures and stylish tile to custom vanities and space-enhancing layouts, we'll bring your vision to life.</p>
-
-
-                <section id="image-carousel-bathroom">
-                    <div class="carousel-container-bathroom">
-                    <div class="carousel-slide-bathroom">
-                        <img src="Photos/Bathroom/IMG_5222.jpg" alt="Image 1">
-                    </div>
-                    <div class="carousel-slide-bathroom">
-                        <img src="Photos/Bathroom/IMG_5230.jpg" alt="Image 2">
-                    </div>
-                    <div class="carousel-slide-bathroom">
-                        <img src="Photos/Bathroom/IMG_5231.jpg" alt="Image 3">
-                    </div> 
-                </section>
-
-                <p><strong>Materials:</strong> Tile, fixtures, vanities.</p>
-                <p><strong>Benefits:</strong> Enhanced comfort, modern design, increased home value.</p>
-            </div>
-
-            <div class="service-item">
-                <h3>Basement Finishing</h3>
-                <p>Expand your living space with our basement finishing services.</p>
-                <div class="photo-grid">
-                    <div class="photo-item">
-                        <img src="path/to/basement1.jpg" alt="Basement 1">
-                    </div>
-                    <div class="photo-item">
-                        <img src="path/to/basement2.jpg" alt="Basement 2">
-                    </div>
-                </div>
-                <p><strong>Benefits:</strong> Increased living space, home value, media rooms, guest suites.</p>
-            </div>
-
-            <section id="consultation">
-                <h2>Schedule a Consultation</h2>
-                <p>Please select a date and time for your consultation:</p>
-                <div class="booking-placeholder">
-                    <div class="calendly-inline-widget" data-url="https://calendly.com/nice-home-renovation/consultation" style="min-width:320px;height:700px;"></div>
-                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                </div>
-             </section>
-
-            <section id="contact-info">
-                <h2>Contact Us</h2>
-                <p><strong>Address:</strong> Richmond Hill, ON, Canada</p>
-                <p><strong>Phone:</strong> 647-261-3479 / 416-568-6908</p>
-                <p><strong>Email:</strong> nice.home.renovation@gmail.com</p>
-            </section>
         </section>
+        
+
+
+        <section id="bathroom-services" class="service-section">
+            <div class="service-content">
+                <h2>Bathroom Remodeling</h2>
+                <p class="service-description">
+                    Upgrade your bathroom into a stylish and relaxing retreat with our expert remodeling services. From modern vanities and luxurious showers to complete renovations, we create beautiful, functional spaces tailored to your needs.
+                </p>
+        
+                <div class="image-grid">
+                    <div class="grid-item">
+                        <img src="Photos/Bathroom/IMG_5222.jpg" alt="Bathroom 1" data-image="Photos/Bathroom/IMG_5222.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Photos/Bathroom/IMG_5230.jpg" alt="Bathroom 2" data-image="Photos/Bathroom/IMG_5230.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Photos/Bathroom/IMG_5231.jpg" alt="Bathroom 3" data-image="Photos/Bathroom/IMG_5231.jpg">
+                    </div>
+
+                </div>
+    
+            </div>
+        </section>
+        
+        <section id="basement-services" class="service-section">
+            <div class="service-content">
+                <h2>Basement Remodeling</h2>
+                <p class="service-description">
+                    Transform your basement into a functional and inviting space with our expert remodeling services. Whether you want a cozy living area, a home theater, a personal gym, or extra bedrooms, we bring your vision to life with quality craftsmanship and thoughtful design.
+                </p>
+        
+                <div class="image-grid">
+                    <div class="grid-item">
+                        <img src="Photos/Basement/basement1.jpg" alt="Basement 1" data-image="Photos/Basement/basement1.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Photos/Basement/basement2.jpg" alt="Basement 2" data-image="Photos/Basement/basement2.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Photos/Basement/basement3.jpg" alt="Basement 3" data-image="Photos/Basement/basement3.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Photos/Basement/basement4.jpg" alt="Basement 4" data-image="Photos/Basement/basement4.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Photos/Basement/basement5.jpg" alt="Basement 5" data-image="Photos/Basement/basement5.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Photos/Basement/basement6.jpg" alt="Basement 6" data-image="Photos/Basement/basement6.jpg">
+                    </div>
+                </div>
+        
+                <div class="service-details">
+                    <p><strong>Benefits:</strong> Increased living space, home value, media rooms, guest suites.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="general-spaces-services" class="service-section">
+            <div class="service-content">
+                <h2>Living Room & General Spaces Remodeling</h2>
+                <p class="service-description">
+                    Enhance the heart of your home with our expert remodeling services for living rooms, hallways, and other general spaces. Whether you're looking to update flooring, add custom trim work, improve lighting, or create an open-concept design, we bring comfort and style to every corner of your home.
+                </p>
+        
+                <div class="image-grid">
+                    <div class="grid-item">
+                        <img src="Photos/Living_Hallway/IMG_2939.jpg" alt="General Space 1" data-image="Photos/Living_Hallway/IMG_2939.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Photos/Living_Hallway/IMG_2956.jpg" alt="General Space 2" data-image="Photos/Living_Hallway/IMG_2956.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Photos/Living_Hallway/IMG_2988.jpg" alt="General Space 3" data-image="Photos/Living_Hallway/IMG_2988.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Photos/Living_Hallway/IMG_2989.jpg" alt="General Space 4" data-image="Photos/Living_Hallway/IMG_2989.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Photos/Living_Hallway/IMG_2990.jpg" alt="General Space 5" data-image="Photos/Living_Hallway/IMG_2990.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Photos/Living_Hallway/IMG_2993.jpg" alt="General Space 6" data-image="Photos/Living_Hallway/IMG_2993.jpg">
+                    </div>
+                </div>
+
+                
+        
+                <div class="service-details">
+                    <p><strong>Services:</strong> Flooring, trim work, lighting, open-concept design.</p>
+                    <p><strong>Benefits:</strong> Enhanced comfort, improved aesthetics, increased space utilization.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="bedroom-services" class="service-section">
+            <div class="service-content">
+                <h2>Bedroom Remodeling</h2>
+                <p class="service-description">
+                    Create a cozy and personalized retreat with our expert bedroom remodeling services. From modern upgrades and custom-built storage solutions to elegant accent walls and lighting enhancements, we design bedrooms that blend comfort, style, and functionality. Whether you need a complete transformation or custom built-ins for better organization, we bring your vision to life with precision and craftsmanship.
+                </p>
+        
+                <div class="image-grid">
+                    <div class="grid-item">
+                        <img src="Photos/Bedroom/IMG_5219.jpg" alt="Bedroom 1" data-image="Photos/Bedroom/IMG_5219.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Photos/Bedroom/IMG_5220.jpg" alt="Bedroom 2" data-image="Photos/Bedroom/IMG_5220.jpg">
+                    </div>
+                    <div class="grid-item">
+                        <img src="Photos/Bedroom/IMG_5234.jpg" alt="Bedroom 3" data-image="Photos/Bedroom/IMG_5234.jpg">
+                    </div>
+
+                </div>
+        
+                <div class="service-details">
+                    <p><strong>Services:</strong> Modern upgrades, custom storage, accent walls, lighting.</p>
+                    <p><strong>Benefits:</strong> Personalized space, improved organization, enhanced comfort.</p>
+                </div>
+            </div>
+        </section>
+    
+
+   
+
     </main>
 
     <div class="call-to-action">
-        <a href="tel:6472613479"> <button>Free Estimate: 647-261-3479</button> </a>
-        <a href="tel:4165686908"> <button>中文电话, 免费估价: 416-568-6908</button> </a>
+        <a href="tel:+1-647-261-3479"> <button>Free Estimate: 647-261-3479</button> </a>
+        <a href="tel:+1-416-568-6908"> <button>中文电话, 免费估价: 416-568-6908</button> </a>
         <a href="mailto:nice.home.renovation@gmail.com"> <button>Email Us</button> </a>
     </div>
 
