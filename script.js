@@ -58,5 +58,4 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(slideBathroom, 3000);
 });
 
-// Build Gulp Task
-exports.build = series(scssTask, jsTask);
+
