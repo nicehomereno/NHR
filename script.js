@@ -59,3 +59,37 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Remove title attribute from all links on page 
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('a');
+    links.forEach(link => link.removeAttribute('title'));
+});
+
+
+// Image Grid & Pop up
+document.addEventListener('DOMContentLoaded', function() {
+    // ... (Your existing JavaScript code)
+
+    const imageGridItems = document.querySelectorAll('.grid-item img');
+    const imagePopup = document.getElementById('image-popup');
+    const popupImage = imagePopup.querySelector('.popup-image');
+    const closePopup = imagePopup.querySelector('.close-popup');
+
+    imageGridItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const imageUrl = this.getAttribute('data-image');
+            popupImage.src = imageUrl;
+            imagePopup.style.display = 'flex';
+        });
+    });
+
+    closePopup.addEventListener('click', function() {
+        imagePopup.style.display = 'none';
+    });
+
+    imagePopup.addEventListener('click', function(event) {
+        if (event.target === imagePopup) {
+            imagePopup.style.display = 'none';
+        }
+    });
+});
