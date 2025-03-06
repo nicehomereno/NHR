@@ -7,7 +7,16 @@
     justify-content: space-between; /* Distribute space, pushing contact info to right */
 }
 
+/* Styles for screens smaller than 768px */
+@media (max-width: 768px) {
+    .featured-box {
+        width: 100%; /* Make featured boxes full width */
+    }
 
+    .call-to-action {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+}
 
 /* -------------------------------------------------- General Styles--------------------------------------------------*/
 body {
